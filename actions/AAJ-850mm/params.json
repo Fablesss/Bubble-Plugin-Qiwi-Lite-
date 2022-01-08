@@ -1,0 +1,102 @@
+{
+    "category": "payment",
+    "display": "[Qiwi Кошелёк Lite] Create payment link",
+    "fields": {
+        "AAL": {
+            "caption": "Уникальный идентификатор счета в системе мерчанта\t",
+            "doc": "Идентификатор выставляемого счета в вашей системе. Он должен быть уникальным и генерироваться на вашей стороне любым способом. Идентификатором может быть любая уникальная последовательность букв или цифр. Также разрешено использование символа подчеркивания (_) и дефиса (-). Максимум 200 символов",
+            "editor": "DynamicValue",
+            "name": "billId",
+            "optional": true,
+            "rank": 1,
+            "value": "text"
+        },
+        "AAe": {
+            "caption": "5. URL для редиректа",
+            "editor": "DynamicValue",
+            "name": "successUrl",
+            "optional": true,
+            "rank": 9,
+            "value": "text"
+        },
+        "ABL": {
+            "caption": "amount",
+            "doc": "Сумма, на которую выставляется счет, округленная в меньшую сторону до 2 десятичных знаков\t",
+            "editor": "DynamicValue",
+            "name": "amount",
+            "optional": true,
+            "rank": 2,
+            "value": "text"
+        },
+        "ABM": {
+            "caption": "phone",
+            "doc": "Номер телефона пользователя (в международном формате)\t",
+            "editor": "DynamicValue",
+            "name": "phone",
+            "optional": true,
+            "rank": 3,
+            "value": "text"
+        },
+        "ABN": {
+            "caption": "email",
+            "doc": "E-mail пользователя\t",
+            "editor": "DynamicValue",
+            "name": "email",
+            "optional": true,
+            "rank": 4,
+            "value": "text"
+        },
+        "ABO": {
+            "caption": "account",
+            "doc": "Идентификатор пользователя в вашей системе\t",
+            "editor": "DynamicValue",
+            "name": "account",
+            "optional": true,
+            "rank": 5,
+            "value": "text"
+        },
+        "ABP": {
+            "caption": "comment",
+            "doc": "Комментарий к счету. Максимум 255 символов",
+            "editor": "DynamicValue",
+            "name": "comment",
+            "optional": true,
+            "rank": 6,
+            "value": "text"
+        },
+        "ABQ": {
+            "caption": "publicKey",
+            "doc": "Ваш ключ идентификации полученный в p2p.qiwi.com",
+            "editor": "DynamicValue",
+            "name": "publicKey",
+            "rank": 0,
+            "value": "text"
+        },
+        "ABT": {
+            "caption": "customFields",
+            "editor": "key_value_list",
+            "name": "customFields",
+            "optional": true,
+            "rank": 7,
+            "value": "text"
+        },
+        "ABX": {
+            "caption": "lifetime",
+            "editor": "DynamicValue",
+            "name": "lifetime",
+            "optional": true,
+            "rank": 8,
+            "value": "date"
+        }
+    },
+    "return_value": {
+        "AAK": {
+            "caption": "Payment link",
+            "name": "paymentLink",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side",
+    "use_packages": true
+}

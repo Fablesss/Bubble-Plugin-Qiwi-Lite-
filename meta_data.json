@@ -1,0 +1,10 @@
+{
+    "categories": {
+        "0": "payment"
+    },
+    "description": "Allows payment link generation for Qiwi. \n\nAdds Workflow action (Payment tab) called [Qiwi Кошелёк Lite] Create payment link, which generates link that you can use in next step \"Open an external website\" or save for later.\n\nAlso plugin adds action [Qiwi Кошелёк Lite] Signature check that allow you to check authenticity of payment notification (more information here https://developer.qiwi.com/ru/p2p-payments/#notifications_auth)\n\nIf you have any questions about plugin use - feel free to contact me in Telegram @den_mok\n---------------------------------------------\nЕсли у вас возникли вопросы по использованию плагина - не стесняйтесь задать их мне в Телеграм @den_mok",
+    "image": "//s3.amazonaws.com/appforest_uf/f1639904836602x774702655638263700/medium_593c38271cbb0a993e82be65397dcf12.png",
+    "license": "open_source",
+    "link": "https://developer.qiwi.com/ru/p2p-payments/#http",
+    "name": "Qiwi Кошелек [Lite]"
+}

@@ -1,0 +1,61 @@
+{
+    "category": "payment",
+    "display": "[Qiwi Кошелёк Lite] Signature check",
+    "fields": {
+        "AAz": {
+            "caption": "currency",
+            "doc": "Идентификатор валюты суммы счета (Alpha-3 ISO 4217 код)\t",
+            "editor": "DynamicValue",
+            "name": "currency",
+            "optional": false,
+            "rank": 0,
+            "value": "text"
+        },
+        "ABA": {
+            "caption": "value",
+            "doc": "Сумма счета, округленная до двух десятичных знаков в меньшую сторону\t",
+            "editor": "DynamicValue",
+            "name": "value",
+            "optional": false,
+            "rank": 1,
+            "value": "text"
+        },
+        "ABB": {
+            "caption": "billId",
+            "doc": "Уникальный идентификатор счета в вашей системе, указанный при выставлении\t",
+            "editor": "DynamicValue",
+            "name": "billId",
+            "optional": false,
+            "rank": 2,
+            "value": "text"
+        },
+        "ABD": {
+            "caption": "siteId",
+            "doc": "Ваш идентификатор в системе p2p.qiwi\t",
+            "editor": "DynamicValue",
+            "name": "siteId",
+            "optional": false,
+            "rank": 3,
+            "value": "text"
+        },
+        "ABE": {
+            "caption": "status",
+            "doc": "Строковое значение статуса\t",
+            "editor": "DynamicValue",
+            "name": "status",
+            "optional": false,
+            "rank": 4,
+            "value": "text"
+        }
+    },
+    "return_value": {
+        "AAy": {
+            "caption": "signature",
+            "name": "signature",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side",
+    "use_packages": false
+}
